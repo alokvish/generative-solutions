@@ -17,7 +17,7 @@ from genai import PromptPattern
 
 load_dotenv()
 palm.configure(api_key=os.environ['API_KEY'])
-os.environ['HUGGINGFACEHUB_API_TOKEN'] = "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"
+#os.environ['HUGGINGFACEHUB_API_TOKEN'] = "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"
 
 api_key = os.getenv("GENAI_KEY", None)
 api_url = os.getenv("GENAI_API", None)
