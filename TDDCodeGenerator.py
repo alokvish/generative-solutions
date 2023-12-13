@@ -64,7 +64,7 @@ first_chain = LLMChain(llm=langchain_model, prompt=first_prompt) #model + prompt
 
 
 overall_chain = SimpleSequentialChain(chains=[first_chain], verbose=True)
-generated_code = overall_chain.run("java")
+generated_code = overall_chain.run("python")
 print(generated_code)
 
 #checkpoint = "bigcode/starcoder"
