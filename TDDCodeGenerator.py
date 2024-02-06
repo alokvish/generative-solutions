@@ -21,6 +21,7 @@ palm.configure(api_key=os.environ['API_KEY'])
 
 api_key = os.getenv("GENAI_KEY", None)
 api_url = os.getenv("GENAI_API", None)
+print(api_url)
 creds = Credentials(api_key, api_endpoint=api_url) # credentials object to access the LLM service
 params = GenerateParams(decoding_method="greedy", max_new_tokens=1000)
 
